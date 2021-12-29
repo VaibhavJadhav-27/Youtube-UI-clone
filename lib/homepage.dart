@@ -25,18 +25,24 @@ class _HomePageState extends State<HomePage> {
               width: MediaQuery.of(context).size.width,
               child: UpperNavigation(),
             ),
-            Row(
-              children: <Widget>[
-                SizedBox(
-                  width: MediaQuery.of(context).size.width * 0.18,
-                  child: LeftDrawer(),
-                ),
-                Column(
-                  children: <Widget>[
-                    Row(),
-                  ],
-                )
-              ],
+            Expanded(
+              child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: <Widget>[
+                  Flexible(
+                    child: Container(
+                      color: Colors.red,
+                    ),
+                    flex: 2,
+                  ),
+                  Flexible(
+                    child: Container(
+                      color: Colors.lightBlue,
+                    ),
+                    flex: 8,
+                  ),
+                ],
+              ),
             )
           ]),
     ));
