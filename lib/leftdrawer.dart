@@ -10,22 +10,11 @@ class LeftDrawer extends StatefulWidget {
 }
 
 class _LeftDrawerState extends State<LeftDrawer> {
-  final ScrollController _leftdrawerscrollcontroller = ScrollController();
+  //final ScrollController _leftdrawerscrollcontroller = ScrollController();
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        child: Scrollbar(
-          controller: _leftdrawerscrollcontroller,
-          isAlwaysShown: true,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[],
-          ),
-        ),
-      ),
+    return Container(
+      color: Colors.green,
     );
   }
 }
