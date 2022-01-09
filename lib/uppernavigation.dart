@@ -26,11 +26,15 @@ class _UpperNavigationState extends State<UpperNavigation> {
               iconSize: 30,
             ),
             Expanded(
-              child: Image(
-                image: AssetImage(
-                    "assets/images/youtubeicon-removebg-preview.png"),
-                color: Colors.white,
-                width: 50,
+              child: Row(
+                children: [
+                  Image(
+                    image: AssetImage(
+                        "assets/images/youtubeicon-removebg-preview.png"),
+                    color: Colors.white,
+                    width: 50,
+                  ),
+                ],
               ),
             ),
           ],
