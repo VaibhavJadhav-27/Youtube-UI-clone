@@ -31,7 +31,8 @@ class _HomePageState extends State<HomePage> {
                 children: <Widget>[
                   Flexible(
                     child: Container(
-                      color: Colors.red,
+                      //color: Colors.red,
+                      child: LeftDrawer(),
                     ),
                     flex: 2,
                   ),
