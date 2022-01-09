@@ -27,7 +27,9 @@ class _UpperNavigationState extends State<UpperNavigation> {
             ),
             Expanded(
               child: Image(
-                image: AssetImage("assets/images/youtubelogo.png"),
+                image: AssetImage(
+                    "assets/images/youtubeicon-removebg-preview.png"),
+                color: Colors.white,
                 width: 50,
               ),
             ),
